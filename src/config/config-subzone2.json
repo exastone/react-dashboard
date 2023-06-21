@@ -1,0 +1,9 @@
+{
+  "name": "Austin",
+  "map-coords": {
+    "lat": 30.2672,
+    "long": -97.7431
+  },
+  "baseURL": "http://192.168.1.52:8080",
+  "sector1DegOffset": 0.0
+}

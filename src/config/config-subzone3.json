@@ -1,0 +1,9 @@
+{
+  "name": "St. John's",
+  "map-coords": {
+    "lat": 47.514912,
+    "long": -52.809959
+  },
+  "baseURL": "http://192.168.1.54:8080",
+  "sector1DegOffset": 21.0
+}

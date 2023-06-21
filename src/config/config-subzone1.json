@@ -1,0 +1,9 @@
+{
+  "name": "Palo Alto",
+  "map-coords": {
+    "lat": 37.394899,
+    "long": -122.149294
+  },
+  "baseURL": "http://192.168.1.53:8080",
+  "sector1DegOffset": 12.9
+}

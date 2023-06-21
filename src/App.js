@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import LocationSelectSidebar from "./components/LocationSelectSidebar";
+import { Grid } from "@mui/material";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+import Subzone1 from "./pages/Subzone1";
+import Subzone2 from "./pages/Subzone2";
+import Subzone3 from "./pages/Subzone3";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container spacing={1}>
+      <Grid item xs={12} sm={12} md={2} >
+        <LocationSelectSidebar />
+      </Grid>
+      <Router>
+        <Routes>
+          <Route path={"/"} element={<p style={{ "padding": "10% 0 0 35%", "font-size": "300%" }}>Select Location</p>} />
+          <Route path={"/Subzone1"} element={<Subzone1 />} />
+          <Route path={"/Subzone2"} element={<Subzone2 />} />
+          <Route path={"/Subzone3"} element={<Subzone3 />} />
+        </Routes>
+      </Router>
+
+    </Grid>
+
   );
 }
 
